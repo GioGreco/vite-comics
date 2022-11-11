@@ -3,13 +3,13 @@
         <div class="logo">
             <a href="#"><img src="../assets/img/dc-logo.png" alt="DC logo"></a>
         </div>
-        <navbar>
+        <nav>
             <ul>
                 <li v-for="(item, index) in navItems" :key="index" :class="{'active' : item.current, 'watched' : beingWatched(index)}">
                     <a :href="item.link" @mouseover="addActive(index)" @mouseleave="removeActive(index)">{{item.text}}</a>
                 </li>
             </ul>
-        </navbar>
+        </nav>
     </header>
 </template>
 
@@ -115,7 +115,7 @@ header{
         }
     }
 
-    navbar{
+    nav{
         width: 60%;
         height: 100%;
 

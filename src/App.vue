@@ -1,8 +1,7 @@
 <template>
   <HeaderComponent/>
-  <main>
-    <h3 class="container">-- Content Goes Here --</h3>
-  </main>
+  <Jumbotron/>
+  <CurrentSeriesComponent/>
   <BrowseSectionsComponent/>
   <FooterComponent/>
 </template>
@@ -11,21 +10,20 @@
   import HeaderComponent from './components/HeaderComponent.vue';
   import FooterComponent from './components/FooterComponent.vue';
   import BrowseSectionsComponent from './components/BrowseSectionsComponent.vue';
+  import Jumbotron from './components/Jumbotron.vue';
+  import CurrentSeriesComponent from './components/CurrentSeriesComponent.vue';
 
   export default {
     components: {
       HeaderComponent,
       FooterComponent,
-      BrowseSectionsComponent
+      BrowseSectionsComponent,
+      Jumbotron,
+      CurrentSeriesComponent
     }
   }
 </script>
 
 <style lang="scss" scoped>
-main{
-  background-color: black;
-  height: 100px;
-  color: white;
-  line-height: 100px;
-}
+
 </style>

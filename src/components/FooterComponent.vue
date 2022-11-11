@@ -79,7 +79,7 @@ footer{
     background-color: $grey-footer-bg;
 
     .footer-top{
-        height: 280px;
+        height: 320px;
         background-image: url('../assets/img/footer-bg.jpg');
         background-size: cover;
 
