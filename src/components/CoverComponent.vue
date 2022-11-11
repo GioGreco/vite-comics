@@ -1,22 +1,17 @@
 <template>
-    <div class="cover">
-
+    <div class="cover-wrapper col-2">
+        <div class="cover">
+            <img :src="obj.thumb" :alt="obj.series">
+        </div>
+        <div class="text-uppercase py-3 px-2">
+            {{obj.series}}
+        </div>
     </div>
 </template>
 
 <script>
     export default {
         name: 'CoverComponent',
+        props: ['obj']
     }
 </script>
-
-<style lang="scss" scoped>
-
-    .cover{
-        height: 100px;
-        width: 100px;
-        background-color: red;
-        border: 1px solid black;
-    }
-
-</style>
