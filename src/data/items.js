@@ -73,16 +73,86 @@ const comics = [
     }
   ]
 
-const array2 = [
-    
+const navBarItems = [
+    {
+        id: 1,
+        text: 'characters',
+        link: '#',
+        current: false
+    },
+    {
+        id: 2,
+        text: 'comics',
+        link: '#',
+        current: false
+    },
+    {
+        id: 3,
+        text: 'movies',
+        link: '#',
+        current: false
+    },
+    {
+        id: 4,
+        text: 'tv',
+        link: '#',
+        current: false
+    },
+    {
+        id: 5,
+        text: 'games',
+        link: '#',
+        current: false
+    },
+    {
+        id: 6,
+        text: 'collectibles',
+        link: '#',
+        current: false
+    },
+    {
+        id: 7,
+        text: 'videos',
+        link: '#',
+        current: false
+    },
+    {
+        id: 8,
+        text: 'fans',
+        link: '#',
+        current: false
+    },
+    {
+        id: 9,
+        text: 'news',
+        link: '#',
+        current: false
+    },
+    {
+        id: 10,
+        text: 'shop',
+        link: '#',
+        current: false
+    }
 ]
 
-const array3 = [
-    
+const footerListItems = [
+    {
+        listTitle: 'dc comics',
+        listItems: ['Characters', 'Comics', 'Movies', 'TV', 'Games', 'Videos', 'News']
+    },
+    {
+        listTitle: 'shop',
+        listItems: ['Shop DC', 'Shop DC Collectibles']
+    },
+    {
+        listTitle: 'dc',
+        listItems: ['Terms Of Use', 'Privacy policy (new)', 'Ad Choices', 'Advertising', 'Jobs', 'Subscriptions', 'Talent Workshops', 'CPSC Certificates', 'Ratings', 'Shop Help', 'Contact Us']
+    },
+    {
+        listTitle: 'sites',
+        listItems: ['DC', 'MAD Magazine', 'DC Kids', 'DC Universe', 'DC Power Visa']
+    }
 ]
 
-const array4 = [
-    
-]
-
-export {comics, array2, array3, array4}
+export {comics, navBarItems, footerListItems}

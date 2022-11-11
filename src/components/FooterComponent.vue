@@ -44,28 +44,12 @@
 </template>
 
 <script>
+import { footerListItems } from '../data/items.js';
     export default {
         name: 'FooterComponent',
         data(){
             return{
-                footerLists: [
-                    {
-                        listTitle: 'dc comics',
-                        listItems: ['Characters', 'Comics', 'Movies', 'TV', 'Games', 'Videos', 'News']
-                    },
-                    {
-                        listTitle: 'shop',
-                        listItems: ['Shop DC', 'Shop DC Collectibles']
-                    },
-                    {
-                        listTitle: 'dc',
-                        listItems: ['Terms Of Use', 'Privacy policy (new)', 'Ad Choices', 'Advertising', 'Jobs', 'Subscriptions', 'Talent Workshops', 'CPSC Certificates', 'Ratings', 'Shop Help', 'Contact Us']
-                    },
-                    {
-                        listTitle: 'sites',
-                        listItems: ['DC', 'MAD Magazine', 'DC Kids', 'DC Universe', 'DC Power Visa']
-                    }
-                ]
+                footerLists: footerListItems
             }
         }
     }
@@ -107,6 +91,11 @@ footer{
 
                 li{
                     padding: 2px 0;
+
+                    &:not(:first-of-type):hover{
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
                 }
             }
 
@@ -139,6 +128,7 @@ footer{
                 width: 40%;
 
                 h4{
+                    margin: 0;
                     color: $blue-follow-us;
                     text-transform: uppercase;
                     font-weight: bolder;

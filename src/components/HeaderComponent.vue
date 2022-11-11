@@ -14,73 +14,14 @@
 </template>
 
 <script>
+import { navBarItems } from '../data/items.js';
+
     export default {
         name: 'HeaderComponent',
         data(){
             return{
                 activePage: 2,
-                navItems: [
-                    {
-                        id: 1,
-                        text: 'characters',
-                        link: '#',
-                        current: false
-                    },
-                    {
-                        id: 2,
-                        text: 'comics',
-                        link: '#',
-                        current: false
-                    },
-                    {
-                        id: 3,
-                        text: 'movies',
-                        link: '#',
-                        current: false
-                    },
-                    {
-                        id: 4,
-                        text: 'tv',
-                        link: '#',
-                        current: false
-                    },
-                    {
-                        id: 5,
-                        text: 'games',
-                        link: '#',
-                        current: false
-                    },
-                    {
-                        id: 6,
-                        text: 'collectibles',
-                        link: '#',
-                        current: false
-                    },
-                    {
-                        id: 7,
-                        text: 'videos',
-                        link: '#',
-                        current: false
-                    },
-                    {
-                        id: 8,
-                        text: 'fans',
-                        link: '#',
-                        current: false
-                    },
-                    {
-                        id: 9,
-                        text: 'news',
-                        link: '#',
-                        current: false
-                    },
-                    {
-                        id: 10,
-                        text: 'shop',
-                        link: '#',
-                        current: false
-                    }
-                ]
+                navItems: navBarItems
             }
         },
         methods: {

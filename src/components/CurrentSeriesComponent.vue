@@ -44,11 +44,32 @@ section{
 
             .cover{
                 width: 100%;
+                cursor: pointer;
 
                 img{
                     width: 100%;
                 }
+
+                &:hover .comic-info{
+                    clip-path: polygon(100% 100%, 0 100%, 100% 24%);
+                }
+
+                .comic-info{
+                    background-image: url('https://img.freepik.com/premium-photo/old-texture-background-vintage-grunge-paper-antique-ancient-parchment-wall-design-template_213524-125.jpg');
+                    clip-path: polygon(100% 100%, 0 100%, 100% 100%);
+                    transition: clip-path .3s ease-out;
+                    font-size: $f-small;
+                    div{
+                        color: black;
+                        text-align: end;
+                        padding: 10px;
+                        .type{
+                            font-size: $f-smaller;
+                        }
+                    }
+                }
             }
+
         }
 
         .banner{
