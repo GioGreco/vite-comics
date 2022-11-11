@@ -1,5 +1,5 @@
 <template>
-    <div class="cover-wrapper col-2">
+    <div class="cover-wrapper col-12 col-sm-6 col-md-3 col-lg-2">
         <div class="cover position-relative">
             <img :src="obj.thumb" :alt="obj.series">
             <div class='comic-info position-absolute w-100 h-100 top-0'>
